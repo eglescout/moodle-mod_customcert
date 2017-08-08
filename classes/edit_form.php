@@ -237,6 +237,7 @@ class edit_form extends \moodleform {
             $numelements = count($elements);
             // Create a table to display these elements.
             $table = new \html_table();
+            $table->attributes = array('class' => 'generaltable elementstable');
             $table->head  = array(get_string('name', 'customcert'), get_string('type', 'customcert'), '');
             $table->align = array('left', 'left', 'left');
             // Loop through and add the elements to the table.
